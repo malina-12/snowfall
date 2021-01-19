@@ -1,0 +1,28 @@
+body {
+  margin: 0 -10%;
+  width: 150vw;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+@keyframes falls {
+  0% {
+    transform: translate(-390px, -20px);
+  }
+
+  100% {
+    transform: translate(80px, 110vh);
+  }
+}
+
+.snow {
+  top: -10px;
+  position: relative;
+  border-radius: 50%;
+  animation: falls infinite cubic-bezier(0, -0.52, 0.52, 0.38);
+  background-color: #ffffffff;
+}
